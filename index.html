@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='Mykyta Koryliuk'>
+    <meta name='purpose' content='Project For OOP Web-Development'>
+    <meta name='tools' content='Vanilla JavaScript, HTML, CSS'>
+    <meta name='date' content='2020-03-18'>
+    <title>computerProperties-Project1-Semester2-Year1</title>
+    <link rel='stylesheet' href='style.css'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand&display=swap' rel='stylesheet'>
+</head>
+<body>
+    <div class='container'>
+        <div class='column-1'>
+            <h2>Video Device</h2>
+                <div class='flip-image'>
+                    <div class='flip-image-inner'>
+                        <div class='flip-image-front'>
+                            <image src='images/video-device.jpg' class='imageShow'></image>
+                        </div>
+                        <div class='flip-image-back'>
+                            <div class='video-inner-place'>
+                                <h3>Manage device properties</h3>
+                                <form name='video-form'>
+                                    <p><label for="serialNumber">Serial Number</label>
+                                        <input type='text' value='MD51788ZR' name='serialNumber' class='video-device input-ds'></p>
+
+                                    <p><label for="supplierName">Supplier Name</label>
+                                        <input type='text' value='Apple' name='supplierName' class='video-device input-ds'></p>
+
+                                    <p><label for="replacementCost">Replacement Cost</label>
+                                      <input type='text' value='$2845' name='replacementCost' class='video-device input-ds'></p>
+
+                                    <p><label for="resolution">Resolution</label>
+                                      <input type='text' value='1920x1080' name='resolution' class='video-device input-ds'></p>
+
+                                    <p><label for="type">Type</label>
+                                        <select name='type' class='video-type video-device input-ds'>
+                                            <option value='LCD'>LCD</option>
+                                            <option value='LED'>LED</option>
+                                            <option value='Plasma'>Plasma</option>
+                                        </select></p>
+
+                                    <p><label for="_status">Status</label>
+                                      <input type='checkbox' id='video-device-status' name='_status' class='check-upd'></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='btnControl'>
+                    <input type='button' name='videoDev' value='PREVIOUS' onclick='behaveButtons(this.value, this.name)' class='btnDesign'>
+                    <input type='button' name='videoDev' value='NEXT' onclick='behaveButtons(this.value, this.name)' class='btnDesign'>
+                    <input type='button' name='videoDev' value='NEW' onclick='behaveButtons(this.value, this.name)' class='btnDesign'>
+                    <input type='button' name='videoDev' value='UPDATE' onclick='behaveButtons(this.value, this.name)' class='btnDesign'>
+                </div>
+        </div>
+        <div class='column-2'>
+            <h2>Hard Disk</h2>
+            <div class='flip-image'>
+                <div class='flip-image-inner'>
+                    <div class='flip-image-front'>
+                        <image src='images/hard-disk.jpg' class='imageShow'></image>
+                    </div>
+                    <div class='flip-image-back'>
+                        <div class='hard-inner-place'>
+                            <h3>Manage device properties</h3>
+                            <form name='hard-form'>
+                                <p><label for="serialNumber">Serial Number</label>
+                                    <input type='text' value='KF98958IS' name='serialNumber' class='hard-disk input-ds'></p>
+
+                                <p><label for="supplierName">Supplier Name</label>
+                                    <input type='text' value='Samsung' name='supplierName' class='hard-disk input-ds'></p>
+
+                                <p><label for="replacementCost">Replacement Cost</label>
+                                    <input type='text' value='$2005' name='replacementCost' class='hard-disk input-ds'></p>
+
+                                <p><label for="size">Size</label>
+                                    <input type='text' value='TB1.1' name='size' class='hard-disk input-ds'></p>
+    
+                                <p><label for="transferRate">Transfer Rate</label>
+                                    <input type='text' value='3GB/second' name='transferRate' class='hard-disk input-ds'></p>
+
+                                <p><label for="platterSize">Platter Size</label>
+                                    <input type='text' value='3.74' name='platterSize' class='hard-disk input-ds'></p>
+
+                                <p><label for="numberOfPlatters">Number of Platters</label>
+                                    <input type='text' value='2' name='numberOfPlatters' class='hard-disk input-ds'></p>
+
+                                <p><label for="_status">Status</label>
+                                    <input type='checkbox' name='_status' id='hard-disk-status'></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class='btnControl'>
+                    <input type='button' name='hardDev' value='PREVIOUS' onclick='behaveButtons(this.value, this.name)' class='btnDesign'>
+                    <input type='button' name='hardDev' value='NEXT' onclick='behaveButtons(this.value, this.name)' class='btnDesign'>
+                    <input type='button' name='hardDev' value='NEW' onclick='behaveButtons(this.value, this.name)' class='btnDesign'>
+                    <input type='button' name='hardDev' value='UPDATE' onclick='behaveButtons(this.value, this.name)' class='btnDesign'>
+                </div>
+        </div>
+        <div class='column-3'>
+            <h2>SSD</h2>
+            <div class='flip-image'>
+                <div class='flip-image-inner'>
+                    <div class='flip-image-front'>
+                        <image src='images/ssd.jpg' class='imageShow'></image>
+                    </div>
+                    <div class='flip-image-back'>
+                        <div class='ssd-inner-place'>
+                            <h3>Manage device properties</h3>
+                            <form name='ssd-form'>
+                                <p><label for="serialNumber">Serial Number</label>
+                                    <input type='text' value='MD51788ZR' name='serialNumber' class='ssd input-ds'></p>
+
+                                <p><label for="supplierName">Supplier Name</label>
+                                    <input type='text' value='Asus' name='supplierName' class='ssd input-ds'></p>
+
+                                <p><label for="replacementCost">Replacement Cost</label>
+                                    <input type='text' value='$2845' name='replacementCost' class='ssd input-ds'></p>
+
+                                <p><label for="size">Size</label>
+                                    <input type='text' value='TB1.1' name='size' class='ssd input-ds'></p>
+    
+                                <p><label for="transferRate">Transfer Rate</label>
+                                    <input type='text' value='3GB/second' name='transferRate' class='ssd input-ds'></p>
+
+                                <p><label for="type">Type</label>
+                                    <select class='ssd-type ssd input-ds' name='type'>
+                                        <option>Flash</option>
+                                        <option>DRAM</option>
+                                    </select></p>
+
+                                <p><label for="wearLeveling">Wear Leveling</label>
+                                    <input type='text' value='false' name='wearLeveling' class='ssd input-ds'></p>
+
+                                <p><label for="status">Status</label>
+                                    <input type='checkbox' name='_status' id='ssd-status'></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class='btnControl'>
+                    <input type='button' name='ssdDev' value='PREVIOUS' onclick='behaveButtons(this.value, this.name)' class='btnDesign'>
+                    <input type='button' name='ssdDev' value='NEXT' onclick='behaveButtons(this.value, this.name)' class='btnDesign'>
+                    <input type='button' name='ssdDev' value='NEW' onclick='behaveButtons(this.value, this.name)' class='btnDesign'>
+                    <input type='button' name='ssdDev' value='UPDATE' onclick='behaveButtons(this.value, this.name)' class='btnDesign'>
+                </div>
+        </div>
+    </div>
+    <script src='classes.js' defer></script>
+</body>
+</html>
