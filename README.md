@@ -1,7 +1,9 @@
 # classes_project_2020
-First working project with JavaScript classes; it does not include the mobile version
+[SCHOOL] Classes Project is a web application for generating and viewing class data. You can input a new device into three different classes where eventually we retrieve it from.
 
-URL to view live example: https://korn1k.github.io/classes_project_2020/index.html
+TECHNOLOGIES: JavaScript, HTML, CSS
+
+URL to view live example: https://korn1k.github.io/classes_project_2020/index.html (WEAK MOBILE VIEW)
 
 INSTALLATION ON YOUR LOCAL PC:
 
